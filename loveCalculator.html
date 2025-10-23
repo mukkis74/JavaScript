@@ -11,7 +11,13 @@
         person2 = prompt("Enter your crush's name:");
         var loveScore = Math.random() * 100;
         loveScore = Math.floor(loveScore) + 1;
-        alert("💘 Your love score is " + loveScore + "%!");
+        if (loveScore > 70) {
+        alert(`💖 Wow! ${person1} and ${person2}, your love score is ${loveScore}%. A match made in heaven!`);
+            } else if (loveScore > 40) {
+        alert(`😊 ${person1} and ${person2}, your love score is ${loveScore}%. There's potential here!`);
+            } else {
+        alert(`😕 ${person1} and ${person2}, your love score is ${loveScore}%. It might be a tough road ahead.`);
+        }
       }
 
       loveCalculator();
